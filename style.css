@@ -1,0 +1,205 @@
+/* Aura Elite Resort Stylesheet */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    color: #2f3640;
+}
+
+/* Header & Logo */
+header {
+    background-color: #0c2461;
+    color: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #f1c40f;
+}
+
+.hotel-name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #f1c40f;
+}
+
+nav a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200') no-repeat center center/cover;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+/* Rooms Display Cards */
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 1px solid #e1b12c;
+    transition: transform 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.room-details {
+    padding: 20px;
+}
+
+.room-details h3 {
+    margin: 0 0 10px 0;
+    color: #0c2461;
+}
+
+.room-price {
+    font-size: 18px;
+    color: #e1b12c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Booking Form Box */
+.booking-box {
+    max-width: 650px;
+    margin: 40px auto;
+    background: #f8f9fa;
+    padding: 35px;
+    border-radius: 12px;
+    border-top: 4px solid #0c2461;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #0c2461;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #44bd32;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #4cd137;
+}
+
+/* Social Footer */
+footer {
+    background-color: #0c2461;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-btn {
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+}
+
+.instagram { background-color: #e1306c; }
+.whatsapp  { background-color: #25d366; }
+.x-twitter { background-color: #000; border: 1px solid #444; }
+.snapchat  { background-color: #fffc00; color: #000 !important; }
+.pinterest { background-color: #bd081c; }
+
+.alert {
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
